@@ -7,12 +7,6 @@ from tensorflow.keras import layers, Model
 from scipy.ndimage import gaussian_filter
 import matplotlib.pyplot as plt
 
-PROJECT_ROOT = ""  # 
-SAVE_DIR = os.path.join(PROJECT_ROOT, "")
-
-random.seed(42)
-np.random.seed(42)
-tf.random.set_seed(42)
 
 try:
     scaler_tab = joblib.load(os.path.join(SAVE_DIR, ""))
