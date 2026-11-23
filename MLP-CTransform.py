@@ -10,13 +10,6 @@ from tensorflow.keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-def set_global_seed(seed=42):
-    random.seed(seed)
-    np.random.seed(seed)
-    tf.random.set_seed(seed)
-    os.environ['TF_DETERMINISTIC_OPS'] = '1'
-
-set_global_seed(42)
 
 PROJECT_ROOT = ""  
 metadata_path = os.path.join(PROJECT_ROOT, "", "")
